@@ -1,0 +1,6 @@
+framework module Pods_DessertProject {
+  umbrella header "Pods-DessertProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
