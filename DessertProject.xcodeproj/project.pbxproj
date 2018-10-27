@@ -120,9 +120,12 @@
 		4DDAE1132183891500A79E12 /* DessertProject */ = {
 			isa = PBXGroup;
 			children = (
-				4DDAE1142183891500A79E12 /* AppDelegate.swift */,
+				4DDAE1472183930300A79E12 /* Extension */,
+				4DDAE145218392EE00A79E12 /* Model */,
+				4DDAE144218392D300A79E12 /* ViewModel */,
+				4DDAE146218392F800A79E12 /* View */,
 				4DDAE1162183891500A79E12 /* ViewController.swift */,
-				4DDAE1182183891500A79E12 /* Main.storyboard */,
+				4DDAE1142183891500A79E12 /* AppDelegate.swift */,
 				4DDAE11B2183891600A79E12 /* Assets.xcassets */,
 				4DDAE11D2183891600A79E12 /* LaunchScreen.storyboard */,
 				4DDAE1202183891600A79E12 /* Info.plist */,
@@ -147,6 +150,35 @@
 				4DDAE1362183891600A79E12 /* Info.plist */,
 			);
 			path = DessertProjectUITests;
+			sourceTree = "<group>";
+		};
+		4DDAE144218392D300A79E12 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4DDAE145218392EE00A79E12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DDAE146218392F800A79E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DDAE1182183891500A79E12 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DDAE1472183930300A79E12 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		B4DC578700389BEBE351D6BD /* Pods */ = {
