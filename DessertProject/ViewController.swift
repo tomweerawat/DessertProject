@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 
 class ViewController: UIViewController {
@@ -16,9 +17,19 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        login();
     }
 
-
+    func login() {
+        let router = AlamofireRouter.getUserProfile
+        Alamofire.request(router).responseJSON { (response) in
+            switch response.result {
+            case .success(let value):
+                print(value)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }
 

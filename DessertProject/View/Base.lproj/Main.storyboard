@@ -30,28 +30,27 @@
                                     <segue destination="5aP-Ra-FMg" kind="presentation" id="rnH-Pw-c2B"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsL-4A-4Yz">
-                                <rect key="frame" x="14" y="340" width="386" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsL-4A-4Yz">
+                                <rect key="frame" x="14" y="320" width="386" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="5HG-68-jAG"/>
+                                    <constraint firstAttribute="height" constant="40" id="5HG-68-jAG"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-1024" translatesAutoresizingMaskIntoConstraints="NO" id="88l-Tt-wKf" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="70" y="86" width="274" height="212"/>
+                                <rect key="frame" x="70" y="86" width="274" height="192"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNh-O6-GyB">
-                                <rect key="frame" x="14" y="378" width="386" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNh-O6-GyB">
+                                <rect key="frame" x="14" y="368" width="386" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="IdQ-PD-mzH"/>
+                                    <constraint firstAttribute="height" constant="40" id="IdQ-PD-mzH"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -103,12 +102,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="a0g-d3-mYs">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="238" id="a0g-d3-mYs">
+                                <rect key="frame" x="0.0" y="28" width="414" height="238"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a0g-d3-mYs" id="dEk-Oh-FdM">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a0g-d3-mYs" id="dEk-Oh-FdM" customClass="SpringImageView" customModule="Spring">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="237.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="191-DT-r5s">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="237.5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="191-DT-r5s" secondAttribute="bottom" id="7nE-xi-kO0"/>
+                                        <constraint firstAttribute="trailing" secondItem="191-DT-r5s" secondAttribute="trailing" id="mTM-u3-jZE"/>
+                                        <constraint firstItem="191-DT-r5s" firstAttribute="leading" secondItem="dEk-Oh-FdM" secondAttribute="leading" id="qhq-W2-KCC"/>
+                                        <constraint firstItem="191-DT-r5s" firstAttribute="top" secondItem="dEk-Oh-FdM" secondAttribute="top" id="uJi-wk-Ahq"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    </userDefinedRuntimeAttributes>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -117,11 +132,11 @@
                             <outlet property="delegate" destination="8NA-TG-UZt" id="Loi-FS-quv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="uIf-yM-LBW"/>
+                    <navigationItem key="navigationItem" id="uIf-yM-LBW" userLabel="Dessert"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Yj-rO-cS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2025" y="-603"/>
+            <point key="canvasLocation" x="2024.6376811594205" y="-603.34821428571422"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Mkf-2w-J0x">
@@ -131,6 +146,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.52332758899999998" green="0.82339185479999999" blue="0.82353645559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.52332758899999998" green="0.82339185479999999" blue="0.82353645559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="p1u-zx-n8k" kind="relationship" relationship="viewControllers" id="sA6-RG-9wX"/>
@@ -141,11 +158,12 @@
             </objects>
             <point key="canvasLocation" x="177" y="-274"/>
         </scene>
-        <!--Item 1-->
+        <!--Menu-->
         <scene sceneID="1rf-tv-QVs">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJm-uF-tDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p1u-zx-n8k" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="iCf-AQ-e7c"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="icons8-restaurant-50" id="iCf-AQ-e7c"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="POw-Kx-soT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -156,15 +174,14 @@
                         <segue destination="8NA-TG-UZt" kind="relationship" relationship="rootViewController" id="KQV-Sk-aDA"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qJm-uF-tDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1166.6666666666667" y="-603.34821428571422"/>
         </scene>
-        <!--Item 2-->
+        <!--Dessert-->
         <scene sceneID="30t-l4-Na4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gB9-pU-atC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="1z3-L5-3XT"/>
+                    <tabBarItem key="tabBarItem" title="Dessert" image="icons8-deliver-food-50" id="1z3-L5-3XT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ogn-DQ-VlD">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -182,5 +199,7 @@
     </scenes>
     <resources>
         <image name="Icon-1024" width="512" height="473.5"/>
+        <image name="icons8-deliver-food-50" width="37.5" height="37.5"/>
+        <image name="icons8-restaurant-50" width="37.5" height="37.5"/>
     </resources>
 </document>
