@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.7.3)
+  - AlamofireObjectMapper (5.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.3)
   - Firebase/Core (5.11.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.3.0)
@@ -58,6 +61,7 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Nimble (7.3.1)
+  - ObjectMapper (3.3.0)
   - Quick (1.3.2)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
@@ -72,6 +76,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireObjectMapper
   - Firebase/Core
   - Firebase/Database
   - Himotoki
@@ -87,6 +92,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AlamofireObjectMapper
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -98,6 +104,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Nimble
+    - ObjectMapper
     - Quick
     - RxCocoa
     - RxOptional
@@ -116,6 +123,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
   Firebase: b48f9e653da971ecce5b8c749684bc8bb2d26bd3
   FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
   FirebaseCore: d16552f06821489ce1affe2e5e3e5593402ddfe3
@@ -127,6 +135,7 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxOptional: bd32ff8ca9df4177683d56ffeb618a9d4d5d5cad
@@ -135,6 +144,6 @@ SPEC CHECKSUMS:
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
 
-PODFILE CHECKSUM: 020f5cdfc5052473c15923ec13f735ef6b72a0e0
+PODFILE CHECKSUM: 7c748b50e31b993ccedce24e93782e4c62b09a12
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.2

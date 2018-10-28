@@ -14,6 +14,10 @@ target 'DessertProject' do
   # Network
   pod 'Himotoki'
   pod 'Alamofire'
+  pod 'AlamofireObjectMapper'
+  #pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire/', :branch => 'alamofire5'
+
+
   
   # Rx
   pod 'RxSwift'

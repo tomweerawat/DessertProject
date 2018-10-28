@@ -14,17 +14,34 @@ class ViewController: UIViewController {
 
 
     @IBAction func loginBtn(_ sender: Any) {
+       loadPhoto()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        login();
+        
+    
+        login(city_id: "1")
+    
     }
 
-    func login() {
-        let router = AlamofireRouter.getUserProfile
+    func login(city_id: String) {
+        let router = AlamofireRouter.loadDessert(city_id: city_id)
         Alamofire.request(router).responseJSON { (response) in
             switch response.result {
             case .success(let value):
+                debugPrint(router)
+                print(value)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    func loadPhoto() {
+        let router = AlamofireRouter.loadPhoto
+        Alamofire.request(router).responseJSON { (response) in
+            switch response.result {
+            case .success(let value):
+            
                 print(value)
             case .failure(let error):
                 print(error)
