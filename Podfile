@@ -14,6 +14,13 @@ target 'DessertProject' do
   # Network
   pod 'Himotoki'
   pod 'Alamofire'
+  pod 'AlamofireObjectMapper'
+  pod 'AlamofireImage'
+ pod 'SwiftyJSON'
+pod 'AlamofireObjectMapper'
+  #pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire/', :branch => 'alamofire5'
+
+
   
   # Rx
   pod 'RxSwift'
@@ -26,6 +33,7 @@ target 'DessertProject' do
   
   # UI
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
+  pod 'SDWebImage'
 
   target 'DessertProjectTests' do
     inherit! :search_paths
