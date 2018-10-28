@@ -12,7 +12,16 @@ import Alamofire
 extension AlamofireRouter{
     
     public func asURLRequest() throws -> URLRequest {
-        let url = URL(string: baseURLString + path)!
+        var url = URL(string: baseURLString + path)!
+        switch self {
+        case .loadPhoto:
+            url = URL(string: baseURLPhoto + path)!;break
+            
+        case .login:
+        url = URL(string: baseURLString + path)!;break
+        case .loadDessert:
+        url = URL(string: baseURLString + path)!;break
+        }
         let encoding = Alamofire.JSONEncoding.default
         var mutableURLRequest = URLRequest(url: url)
         mutableURLRequest.httpMethod = method.rawValue

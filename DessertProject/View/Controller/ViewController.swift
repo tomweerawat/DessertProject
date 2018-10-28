@@ -14,13 +14,13 @@ class ViewController: UIViewController {
 
 
     @IBAction func loginBtn(_ sender: Any) {
-       loadPhoto()
+     
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
-        login(city_id: "1")
+//        loadPhoto()
+//        login(city_id: "1")
     
     }
 
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         Alamofire.request(router).responseJSON { (response) in
             switch response.result {
             case .success(let value):
-                debugPrint(router)
+            
                 print(value)
             case .failure(let error):
                 print(error)

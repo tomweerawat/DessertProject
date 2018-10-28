@@ -23,6 +23,11 @@
 		4D624DC52185707000804E6A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D624DC42185707000804E6A /* ApiClient.swift */; };
 		4D624DC72185731400804E6A /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D624DC62185731400804E6A /* Dessert.swift */; };
 		4DBE35C22185A253002EA4A1 /* AlamofireRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C12185A253002EA4A1 /* AlamofireRouterProtocol.swift */; };
+		4DBE35C62185C91F002EA4A1 /* DessertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C52185C91F002EA4A1 /* DessertCell.swift */; };
+		4DBE35C82185F2A3002EA4A1 /* DessertCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C72185F2A3002EA4A1 /* DessertCellModel.swift */; };
+		4DBE35CA2185F5F2002EA4A1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C92185F5F2002EA4A1 /* NetworkError.swift */; };
+		4DBE35CC2185F83D002EA4A1 /* DessertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35CB2185F83D002EA4A1 /* DessertViewController.swift */; };
+		4DBE35D42186114D002EA4A1 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35D32186114D002EA4A1 /* TestCell.swift */; };
 		4DDAE1152183891500A79E12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAE1142183891500A79E12 /* AppDelegate.swift */; };
 		4DDAE1172183891500A79E12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAE1162183891500A79E12 /* ViewController.swift */; };
 		4DDAE11A2183891500A79E12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAE1182183891500A79E12 /* Main.storyboard */; };
@@ -68,6 +73,11 @@
 		4D624DC42185707000804E6A /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		4D624DC62185731400804E6A /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
 		4DBE35C12185A253002EA4A1 /* AlamofireRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRouterProtocol.swift; sourceTree = "<group>"; };
+		4DBE35C52185C91F002EA4A1 /* DessertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCell.swift; sourceTree = "<group>"; };
+		4DBE35C72185F2A3002EA4A1 /* DessertCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCellModel.swift; sourceTree = "<group>"; };
+		4DBE35C92185F5F2002EA4A1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4DBE35CB2185F83D002EA4A1 /* DessertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertViewController.swift; sourceTree = "<group>"; };
+		4DBE35D32186114D002EA4A1 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		4DDAE1112183891500A79E12 /* DessertProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DessertProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDAE1142183891500A79E12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DDAE1162183891500A79E12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +143,24 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		4DBE35C32185C688002EA4A1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE35C52185C91F002EA4A1 /* DessertCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4DBE35C42185C873002EA4A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DDAE1162183891500A79E12 /* ViewController.swift */,
+				4DBE35CB2185F83D002EA4A1 /* DessertViewController.swift */,
+				4DBE35D32186114D002EA4A1 /* TestCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		4DDAE1082183891500A79E12 = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +190,6 @@
 				4DDAE145218392EE00A79E12 /* Model */,
 				4DDAE144218392D300A79E12 /* ViewModel */,
 				4DDAE146218392F800A79E12 /* View */,
-				4DDAE1162183891500A79E12 /* ViewController.swift */,
 				4DDAE1142183891500A79E12 /* AppDelegate.swift */,
 				4DDAE11B2183891600A79E12 /* Assets.xcassets */,
 				4DDAE11D2183891600A79E12 /* LaunchScreen.storyboard */,
@@ -193,6 +220,7 @@
 		4DDAE144218392D300A79E12 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4DBE35C72185F2A3002EA4A1 /* DessertCellModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -209,6 +237,8 @@
 		4DDAE146218392F800A79E12 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4DBE35C42185C873002EA4A1 /* Controller */,
+				4DBE35C32185C688002EA4A1 /* Cell */,
 				4DDAE1182183891500A79E12 /* Main.storyboard */,
 			);
 			path = View;
@@ -227,6 +257,7 @@
 				4D624DB72184CED400804E6A /* Header.swift */,
 				4D624DBB2184D44F00804E6A /* Parameter.swift */,
 				4DBE35C12185A253002EA4A1 /* AlamofireRouterProtocol.swift */,
+				4DBE35C92185F5F2002EA4A1 /* NetworkError.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -430,6 +461,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DessertProject/Pods-DessertProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Himotoki/Himotoki.framework",
@@ -437,7 +469,9 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -448,6 +482,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Himotoki.framework",
@@ -455,7 +490,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -499,7 +536,10 @@
 				4D624DB82184CED400804E6A /* Header.swift in Sources */,
 				4D624DB22184CBC100804E6A /* UrlRequest.swift in Sources */,
 				4D624DB42184CCDE00804E6A /* BaseURL.swift in Sources */,
+				4DBE35C62185C91F002EA4A1 /* DessertCell.swift in Sources */,
 				4D624DAC2184C92200804E6A /* PathUrl.swift in Sources */,
+				4DBE35C82185F2A3002EA4A1 /* DessertCellModel.swift in Sources */,
+				4DBE35D42186114D002EA4A1 /* TestCell.swift in Sources */,
 				4D624DB62184CE9800804E6A /* RawData.swift in Sources */,
 				4DDAE1172183891500A79E12 /* ViewController.swift in Sources */,
 				4D624DC121856FA400804E6A /* Constants.swift in Sources */,
@@ -508,9 +548,11 @@
 				4D624DC72185731400804E6A /* Dessert.swift in Sources */,
 				4D624DBC2184D44F00804E6A /* Parameter.swift in Sources */,
 				4D624DAA2184BF3D00804E6A /* Network.swift in Sources */,
+				4DBE35CC2185F83D002EA4A1 /* DessertViewController.swift in Sources */,
 				4DBE35C22185A253002EA4A1 /* AlamofireRouterProtocol.swift in Sources */,
 				4D624DC32185703600804E6A /* ApiRouter.swift in Sources */,
 				4D624DC52185707000804E6A /* ApiClient.swift in Sources */,
+				4DBE35CA2185F5F2002EA4A1 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
