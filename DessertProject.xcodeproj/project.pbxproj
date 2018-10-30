@@ -28,6 +28,7 @@
 		4DBE35CA2185F5F2002EA4A1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C92185F5F2002EA4A1 /* NetworkError.swift */; };
 		4DBE35CC2185F83D002EA4A1 /* DessertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35CB2185F83D002EA4A1 /* DessertViewController.swift */; };
 		4DBE35D42186114D002EA4A1 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35D32186114D002EA4A1 /* TestCell.swift */; };
+		4DD6B91B21875EFA00915A0D /* DessertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6B91A21875EFA00915A0D /* DessertMapper.swift */; };
 		4DDAE1152183891500A79E12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAE1142183891500A79E12 /* AppDelegate.swift */; };
 		4DDAE1172183891500A79E12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAE1162183891500A79E12 /* ViewController.swift */; };
 		4DDAE11A2183891500A79E12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAE1182183891500A79E12 /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 		4DBE35C92185F5F2002EA4A1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4DBE35CB2185F83D002EA4A1 /* DessertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertViewController.swift; sourceTree = "<group>"; };
 		4DBE35D32186114D002EA4A1 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		4DD6B91A21875EFA00915A0D /* DessertMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertMapper.swift; sourceTree = "<group>"; };
 		4DDAE1112183891500A79E12 /* DessertProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DessertProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDAE1142183891500A79E12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DDAE1162183891500A79E12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			children = (
 				4D624DB92184CF4B00804E6A /* UserInfo.swift */,
 				4D624DC62185731400804E6A /* Dessert.swift */,
+				4DD6B91A21875EFA00915A0D /* DessertMapper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				4D624DBC2184D44F00804E6A /* Parameter.swift in Sources */,
 				4D624DAA2184BF3D00804E6A /* Network.swift in Sources */,
 				4DBE35CC2185F83D002EA4A1 /* DessertViewController.swift in Sources */,
+				4DD6B91B21875EFA00915A0D /* DessertMapper.swift in Sources */,
 				4DBE35C22185A253002EA4A1 /* AlamofireRouterProtocol.swift in Sources */,
 				4D624DC32185703600804E6A /* ApiRouter.swift in Sources */,
 				4D624DC52185707000804E6A /* ApiClient.swift in Sources */,
