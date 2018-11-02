@@ -17,13 +17,13 @@ public enum AlamofireRouter: URLRequestConvertible {
     case login(email: String, password: String)
     case loadPhoto
     case loadDessert(city_id: String)
-
+    
 }
 protocol Networking {
     func image(url: String) -> Observable<UIImage>
 }
 final class Network: Networking{
-     private let queue = DispatchQueue(label: "DessertProject.Network.Queue")
+    private let queue = DispatchQueue(label: "DessertProject.Network.Queue")
     func image(url: String) -> Observable<UIImage> {
         return Observable.create { observer in
             let request = Alamofire.request(url, method: .get)

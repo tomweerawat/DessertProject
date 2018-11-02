@@ -9,71 +9,73 @@ import UIKit
 import SDWebImage
 import Alamofire
 import AlamofireImage
+import AlamofireObjectMapper
 import ObjectMapper
 import SwiftyJSON
 class DessertViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    @IBOutlet weak var tableView: UITableView!
-    
-    
-    var respPhoto:[DessertDao]?
+    @IBOutlet weak var tableViewLoad: UITableView!
+
+    var dataResp:[Collections]?
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableViewLoad.dataSource = self
+        tableViewLoad.delegate = self
         login(city_id: "1")
-       
+        //        onLoadData(city_id: "1")
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DessertCell", for: indexPath) as! TestCell
-        cell.tittleLabel.text =  respPhoto?[indexPath.row].title
-//         cell.backgroundColor = UIColor.green
+        cell.nameLabel.text =  dataResp?[indexPath.row].collection?.title
+        cell.locationNameLabel.text =  dataResp?[indexPath.row].collection?.description
+        Alamofire.request((dataResp?[indexPath.row].collection?.image_url)!).responseImage { response in
+            if let image = response.result.value{
+                cell.thumbnailImageView?.image = image
+            }
+        }
         
         return cell
     }
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return respPhoto?.count ?? 0
+        return dataResp?.count ?? 0
+        
     }
-
+    
     func login(city_id: String) {
         let router = AlamofireRouter.loadDessert(city_id: city_id)
         Alamofire.request(router).responseJSON { (response) in
             switch response.result {
             case .success(let value):
-                
-//                  self.respPhoto = Mapper<DessertDao>().mapArray(JSONObject: value)
-//                let switftyJsonVar = JSON(value)
-//                if let respData = switftyJsonVar["collections"].arrayObject {
-//                    self.respPhoto = Mapper<DessertDao>().mapArray(JSONObject: respData)
-//                    self.tableView.reloadData()
-//                }
                 let switftyJsonVar = JSON(value)
                 let collections = switftyJsonVar["collections"]
                 if let respData = collections.arrayObject {
-                self.respPhoto = Mapper<DessertDao>().mapArray(JSONObject: respData)
-                
-                    
-                     print(respData)
-                   
-                    
+                    self.dataResp = Mapper<Collections>().mapArray(JSONObject: respData)
+                    print(self.dataResp?.count as Any)
+                    self.tableViewLoad.reloadData()
                 }
-                
-//                for newCollectiom in collections {
-//
-//                self.respPhoto = Mapper<DessertDao>().mapArray(JSONObject: newCollectiom)
-//
-//                }
-//                self.tableView.reloadData()
                 
             case .failure(let error):
                 print(error)
             }
         }
     }
-    
+    //    func onLoadData(city_id: String){
+    //        let router = AlamofireRouter.loadDessert(city_id: city_id)
+    //        Alamofire.request(router).responseArray(keyPath: "collections") { (response: DataResponse<[Collections]>) in
+    //            switch response.result {
+    //            case .success:
+    //                self.dataResp = response.result.value ?? []
+    //                self.tableView.reloadData()
+    //                for project in self.dataResp {
+    //
+    //                    self.tableView.reloadData()
+    //                }
+    //            case .failure(let error):
+    //                print(error)
+    //            }
+    //        }
+    //    }
 }
+
