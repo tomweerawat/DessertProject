@@ -22,6 +22,9 @@
 		4D624DC32185703600804E6A /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D624DC22185703600804E6A /* ApiRouter.swift */; };
 		4D624DC52185707000804E6A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D624DC42185707000804E6A /* ApiClient.swift */; };
 		4D624DC72185731400804E6A /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D624DC62185731400804E6A /* Dessert.swift */; };
+		4DBD74B3218A21100094DF81 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD74B0218A21100094DF81 /* Collection.swift */; };
+		4DBD74B4218A21100094DF81 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD74B1218A21100094DF81 /* Collections.swift */; };
+		4DBD74B5218A21100094DF81 /* DessertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD74B2218A21100094DF81 /* DessertMapper.swift */; };
 		4DBE35C22185A253002EA4A1 /* AlamofireRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C12185A253002EA4A1 /* AlamofireRouterProtocol.swift */; };
 		4DBE35C62185C91F002EA4A1 /* DessertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C52185C91F002EA4A1 /* DessertCell.swift */; };
 		4DBE35C82185F2A3002EA4A1 /* DessertCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C72185F2A3002EA4A1 /* DessertCellModel.swift */; };
@@ -72,6 +75,9 @@
 		4D624DC22185703600804E6A /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		4D624DC42185707000804E6A /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		4D624DC62185731400804E6A /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
+		4DBD74B0218A21100094DF81 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collection.swift; path = ../../../codegen_5bd9a875abdca/Collection.swift; sourceTree = "<group>"; };
+		4DBD74B1218A21100094DF81 /* Collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collections.swift; path = ../../../codegen_5bd9a875abdca/Collections.swift; sourceTree = "<group>"; };
+		4DBD74B2218A21100094DF81 /* DessertMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DessertMapper.swift; path = ../../../codegen_5bd9a875abdca/DessertMapper.swift; sourceTree = "<group>"; };
 		4DBE35C12185A253002EA4A1 /* AlamofireRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRouterProtocol.swift; sourceTree = "<group>"; };
 		4DBE35C52185C91F002EA4A1 /* DessertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCell.swift; sourceTree = "<group>"; };
 		4DBE35C72185F2A3002EA4A1 /* DessertCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCellModel.swift; sourceTree = "<group>"; };
@@ -228,6 +234,9 @@
 		4DDAE145218392EE00A79E12 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4DBD74B0218A21100094DF81 /* Collection.swift */,
+				4DBD74B1218A21100094DF81 /* Collections.swift */,
+				4DBD74B2218A21100094DF81 /* DessertMapper.swift */,
 				4D624DB92184CF4B00804E6A /* UserInfo.swift */,
 				4D624DC62185731400804E6A /* Dessert.swift */,
 			);
@@ -535,10 +544,12 @@
 				4D624DB02184CA4700804E6A /* AlamofireMethod.swift in Sources */,
 				4D624DB82184CED400804E6A /* Header.swift in Sources */,
 				4D624DB22184CBC100804E6A /* UrlRequest.swift in Sources */,
+				4DBD74B4218A21100094DF81 /* Collections.swift in Sources */,
 				4D624DB42184CCDE00804E6A /* BaseURL.swift in Sources */,
 				4DBE35C62185C91F002EA4A1 /* DessertCell.swift in Sources */,
 				4D624DAC2184C92200804E6A /* PathUrl.swift in Sources */,
 				4DBE35C82185F2A3002EA4A1 /* DessertCellModel.swift in Sources */,
+				4DBD74B5218A21100094DF81 /* DessertMapper.swift in Sources */,
 				4DBE35D42186114D002EA4A1 /* TestCell.swift in Sources */,
 				4D624DB62184CE9800804E6A /* RawData.swift in Sources */,
 				4DDAE1172183891500A79E12 /* ViewController.swift in Sources */,
@@ -550,6 +561,7 @@
 				4D624DAA2184BF3D00804E6A /* Network.swift in Sources */,
 				4DBE35CC2185F83D002EA4A1 /* DessertViewController.swift in Sources */,
 				4DBE35C22185A253002EA4A1 /* AlamofireRouterProtocol.swift in Sources */,
+				4DBD74B3218A21100094DF81 /* Collection.swift in Sources */,
 				4D624DC32185703600804E6A /* ApiRouter.swift in Sources */,
 				4D624DC52185707000804E6A /* ApiClient.swift in Sources */,
 				4DBE35CA2185F5F2002EA4A1 /* NetworkError.swift in Sources */,
