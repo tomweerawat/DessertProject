@@ -12,12 +12,9 @@ import AlamofireImage
 import AlamofireObjectMapper
 import ObjectMapper
 import SwiftyJSON
-class DessertViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class DessertViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-    }
 
 }
 

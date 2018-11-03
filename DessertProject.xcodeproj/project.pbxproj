@@ -36,9 +36,9 @@
 		4DDAE12A2183891600A79E12 /* DessertProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAE1292183891600A79E12 /* DessertProjectTests.swift */; };
 		4DDAE1352183891600A79E12 /* DessertProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAE1342183891600A79E12 /* DessertProjectUITests.swift */; };
 		4DDAE14321838B3B00A79E12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAE14221838B3B00A79E12 /* GoogleService-Info.plist */; };
-		4DF0EF5E218D4DE40029DD86 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0EF5B218D4DE40029DD86 /* Collection.swift */; };
-		4DF0EF5F218D4DE40029DD86 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0EF5C218D4DE40029DD86 /* Collections.swift */; };
-		4DF0EF60218D4DE40029DD86 /* DessertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0EF5D218D4DE40029DD86 /* DessertMapper.swift */; };
+		4DF0EF64218D500B0029DD86 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0EF61218D500B0029DD86 /* Collection.swift */; };
+		4DF0EF65218D500B0029DD86 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0EF62218D500B0029DD86 /* Collections.swift */; };
+		4DF0EF66218D500B0029DD86 /* DessertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0EF63218D500B0029DD86 /* DessertMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,9 +95,9 @@
 		4DDAE1342183891600A79E12 /* DessertProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertProjectUITests.swift; sourceTree = "<group>"; };
 		4DDAE1362183891600A79E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDAE14221838B3B00A79E12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Applogo/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4DF0EF5B218D4DE40029DD86 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collection.swift; path = ../../../Collection.swift; sourceTree = "<group>"; };
-		4DF0EF5C218D4DE40029DD86 /* Collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collections.swift; path = ../../../Collections.swift; sourceTree = "<group>"; };
-		4DF0EF5D218D4DE40029DD86 /* DessertMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DessertMapper.swift; path = ../../../DessertMapper.swift; sourceTree = "<group>"; };
+		4DF0EF61218D500B0029DD86 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		4DF0EF62218D500B0029DD86 /* Collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
+		4DF0EF63218D500B0029DD86 /* DessertMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertMapper.swift; sourceTree = "<group>"; };
 		64626FA0754B20F94226AE8D /* Pods_DessertProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DessertProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9569356225A032144BACCB32 /* Pods-DessertProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DessertProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DessertProject/Pods-DessertProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F28589505D65250ACFBCE906 /* Pods-DessertProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DessertProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DessertProjectTests/Pods-DessertProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -234,9 +234,9 @@
 		4DDAE145218392EE00A79E12 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4DF0EF5B218D4DE40029DD86 /* Collection.swift */,
-				4DF0EF5C218D4DE40029DD86 /* Collections.swift */,
-				4DF0EF5D218D4DE40029DD86 /* DessertMapper.swift */,
+				4DF0EF61218D500B0029DD86 /* Collection.swift */,
+				4DF0EF62218D500B0029DD86 /* Collections.swift */,
+				4DF0EF63218D500B0029DD86 /* DessertMapper.swift */,
 				4D624DB92184CF4B00804E6A /* UserInfo.swift */,
 				4D624DC62185731400804E6A /* Dessert.swift */,
 			);
@@ -549,14 +549,14 @@
 				4D624DB42184CCDE00804E6A /* BaseURL.swift in Sources */,
 				4DBE35C62185C91F002EA4A1 /* DessertCell.swift in Sources */,
 				4D624DAC2184C92200804E6A /* PathUrl.swift in Sources */,
-				4DF0EF5F218D4DE40029DD86 /* Collections.swift in Sources */,
+				4DF0EF65218D500B0029DD86 /* Collections.swift in Sources */,
 				4DBE35C82185F2A3002EA4A1 /* DessertCellModel.swift in Sources */,
-				4DF0EF5E218D4DE40029DD86 /* Collection.swift in Sources */,
+				4DF0EF64218D500B0029DD86 /* Collection.swift in Sources */,
 				4DBE35D42186114D002EA4A1 /* TestCell.swift in Sources */,
 				4D624DB62184CE9800804E6A /* RawData.swift in Sources */,
 				4DDAE1172183891500A79E12 /* ViewController.swift in Sources */,
 				4D624DC121856FA400804E6A /* Constants.swift in Sources */,
-				4DF0EF60218D4DE40029DD86 /* DessertMapper.swift in Sources */,
+				4DF0EF66218D500B0029DD86 /* DessertMapper.swift in Sources */,
 				4DDAE1152183891500A79E12 /* AppDelegate.swift in Sources */,
 				4D624DBA2184CF4B00804E6A /* UserInfo.swift in Sources */,
 				4D624DC72185731400804E6A /* Dessert.swift in Sources */,
