@@ -57,6 +57,7 @@ PODS:
     - GoogleUtilities/Logger
   - Himotoki (3.2.0)
   - leveldb-library (1.20)
+  - lottie-ios (2.5.2)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -87,6 +88,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Himotoki
+  - lottie-ios
   - Nimble
   - Quick
   - RxCocoa
@@ -112,6 +114,7 @@ SPEC REPOS:
     - GoogleUtilities
     - Himotoki
     - leveldb-library
+    - lottie-ios
     - nanopb
     - Nimble
     - ObjectMapper
@@ -146,6 +149,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: abb092d2c12e817fa3e0e7b274987dd72fb86ec3
   Himotoki: 2618fc6b939ad6d9b71c52c90fe210f54ea28167
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
@@ -159,6 +163,6 @@ SPEC CHECKSUMS:
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
 
-PODFILE CHECKSUM: ce20249a1c4ae04b09e96e25a64d46d9964343cd
+PODFILE CHECKSUM: 53a44f08d9685a470be37dead6a0eafd171e2c85
 
 COCOAPODS: 1.6.0.beta.2
