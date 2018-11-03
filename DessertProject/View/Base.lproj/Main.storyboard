@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -184,7 +184,6 @@
         <!--Navigation Controller-->
         <scene sceneID="1rf-tv-QVs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qJm-uF-tDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p1u-zx-n8k" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="icons8-restaurant-50" id="iCf-AQ-e7c"/>
                     <toolbarItems/>
@@ -197,13 +196,13 @@
                         <segue destination="R1B-VT-jpE" kind="relationship" relationship="rootViewController" id="Ep5-hz-8st"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJm-uF-tDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1166.6666666666667" y="-603.34821428571422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="30t-l4-Na4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RVH-Zo-gc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gB9-pU-atC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="icons8-deliver-food-50" id="1z3-L5-3XT"/>
                     <toolbarItems/>
@@ -216,6 +215,7 @@
                         <segue destination="xDh-JK-bpX" kind="relationship" relationship="rootViewController" id="7bd-uc-GIt"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVH-Zo-gc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1166.6666666666667" y="67.633928571428569"/>
         </scene>
@@ -232,14 +232,14 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DessertCell" id="wQ1-Et-crN" customClass="TestCell" customModule="DessertProject" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DessertCell" id="wQ1-Et-crN" customClass="DessertCell" customModule="DessertProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="414" height="86"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wQ1-Et-crN" id="OGC-dB-QYu">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="85.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-1024" translatesAutoresizingMaskIntoConstraints="NO" id="nQC-EI-fXA" customClass="SpringImageView" customModule="Spring">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-1024" translatesAutoresizingMaskIntoConstraints="NO" id="nQC-EI-fXA">
                                                     <rect key="frame" x="10" y="10" width="80" height="65.5"/>
                                                     <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -279,17 +279,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="locationNameLabel" destination="UVy-ul-gJN" id="87s-aA-Kux"/>
-                                            <outlet property="nameLabel" destination="VJ1-aQ-3hb" id="hey-oY-48d"/>
-                                            <outlet property="thumbnailImageView" destination="nQC-EI-fXA" id="hps-hz-GAL"/>
+                                            <outlet property="locationName" destination="UVy-ul-gJN" id="2J2-OH-m9A"/>
+                                            <outlet property="nameLabel" destination="VJ1-aQ-3hb" id="hWZ-H6-xd1"/>
+                                            <outlet property="thumbImage" destination="nQC-EI-fXA" id="Tcg-l3-8l0"/>
                                             <segue destination="pHR-OK-T4m" kind="show" id="aI3-9f-W98"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="R1B-VT-jpE" id="Apf-IT-sRF"/>
-                                    <outlet property="delegate" destination="R1B-VT-jpE" id="kOX-Ts-UXG"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -298,9 +294,6 @@
                     <navigationItem key="navigationItem" title="Menu" id="W2q-eE-KoL">
                         <barButtonItem key="backBarButtonItem" title="Back" id="joG-48-S8f"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="tableViewLoad" destination="w74-Ek-Rnr" id="Edf-dt-zip"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SlX-ts-qRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

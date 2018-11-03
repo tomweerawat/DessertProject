@@ -26,6 +26,8 @@ target 'DessertProject' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxOptional'
+  pod 'Alamofire'
+  pod 'RxAlamofire'
   
   # Firebase
   pod 'Firebase/Core'
