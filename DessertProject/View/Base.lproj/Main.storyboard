@@ -294,6 +294,9 @@
                     <navigationItem key="navigationItem" title="Menu" id="W2q-eE-KoL">
                         <barButtonItem key="backBarButtonItem" title="Back" id="joG-48-S8f"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableViewLoad" destination="w74-Ek-Rnr" id="K2h-3O-qpG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SlX-ts-qRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

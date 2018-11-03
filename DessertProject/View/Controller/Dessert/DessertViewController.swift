@@ -20,9 +20,10 @@ class DessertViewController:UIViewController {
     private let disposeBag = DisposeBag()
     internal var dessertListViewModel: DessertListViewModel!
     
+    @IBOutlet weak var tableViewLoad: UITableView!
     
     override func viewDidLoad() {
-        self.title = NSLocalizedString("playlistsTitle", comment: "")
+        self.title = NSLocalizedString("Menu", comment: "")
         
         dessertListViewModel = DessertListViewModel(service: DessertService())
         bind(viewModel: dessertListViewModel)
@@ -32,7 +33,7 @@ class DessertViewController:UIViewController {
         viewModel?.dessertList.asObservable()
             .observeOn(MainScheduler.instance)
             .subscribe({ (result) in
-//                self.collectionView?.reloadData()
+                self.tableViewLoad.reloadData()
             }).disposed(by: disposeBag)
         
         viewModel?.errorMessage.asObservable()

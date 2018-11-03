@@ -9,23 +9,22 @@
 import Foundation
 import UIKit
 
-extension DessertViewController {
+extension DessertViewController: UITableViewDataSource {
+
     
-//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        return 1
-//    }
-//
-//
-//    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 10
-//    }
-//
-//    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PlaylistCollectionViewCell.reuseIdentifier, for: indexPath) as! PlaylistCollectionViewCell
-//        let playlist = playlistsCollectionViewModel.playlists.value[indexPath.row]
-//        cell.bind(playlist: PlaylistViewModel(playlist: playlist))
-//        return cell
-//    }
-//
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dessertListViewModel.dessertList.value.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: DessertCell.reuseIdentifier, for: indexPath) as! DessertCell
+        let dessertlist = dessertListViewModel.dessertList.value[indexPath.row]
+//        cell.bind(trackViewModel: TrackViewModel(track: track))
+        cell.bind(dessertlist: DessertViewModel(dessertViewmodel: dessertlist))
+        return cell
+    }
 }

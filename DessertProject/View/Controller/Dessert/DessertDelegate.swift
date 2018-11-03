@@ -6,4 +6,16 @@
 //  Copyright © 2561 Weerawat Plianchum. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension DessertViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
+    }
+    
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        self.scrollOffset.value = scrollView.contentOffset.y
+//    }
+    
+}
