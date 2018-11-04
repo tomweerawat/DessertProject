@@ -21,13 +21,13 @@
 		4D624DC121856FA400804E6A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D624DC021856FA400804E6A /* Constants.swift */; };
 		4D624DC32185703600804E6A /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D624DC22185703600804E6A /* ApiRouter.swift */; };
 		4D624DC52185707000804E6A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D624DC42185707000804E6A /* ApiClient.swift */; };
-		4D624DC72185731400804E6A /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D624DC62185731400804E6A /* Dessert.swift */; };
-		4DBD74B3218A21100094DF81 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD74B0218A21100094DF81 /* Collection.swift */; };
-		4DBD74B4218A21100094DF81 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD74B1218A21100094DF81 /* Collections.swift */; };
-		4DBD74B5218A21100094DF81 /* DessertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD74B2218A21100094DF81 /* DessertMapper.swift */; };
+		4D624DC72185731400804E6A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D624DC62185731400804E6A /* Result.swift */; };
+		4D78886F218D8C9800CD8696 /* DessertListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78886E218D8C9800CD8696 /* DessertListViewModel.swift */; };
+		4D788872218D8FA300CD8696 /* DessertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D788871218D8FA300CD8696 /* DessertViewModel.swift */; };
+		4D788875218D982800CD8696 /* DessertDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D788874218D982800CD8696 /* DessertDataSource.swift */; };
+		4D788877218D984000CD8696 /* DessertDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D788876218D984000CD8696 /* DessertDelegate.swift */; };
 		4DBE35C22185A253002EA4A1 /* AlamofireRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C12185A253002EA4A1 /* AlamofireRouterProtocol.swift */; };
 		4DBE35C62185C91F002EA4A1 /* DessertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C52185C91F002EA4A1 /* DessertCell.swift */; };
-		4DBE35C82185F2A3002EA4A1 /* DessertCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C72185F2A3002EA4A1 /* DessertCellModel.swift */; };
 		4DBE35CA2185F5F2002EA4A1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35C92185F5F2002EA4A1 /* NetworkError.swift */; };
 		4DBE35CC2185F83D002EA4A1 /* DessertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35CB2185F83D002EA4A1 /* DessertViewController.swift */; };
 		4DBE35D42186114D002EA4A1 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE35D32186114D002EA4A1 /* TestCell.swift */; };
@@ -39,6 +39,10 @@
 		4DDAE12A2183891600A79E12 /* DessertProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAE1292183891600A79E12 /* DessertProjectTests.swift */; };
 		4DDAE1352183891600A79E12 /* DessertProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAE1342183891600A79E12 /* DessertProjectUITests.swift */; };
 		4DDAE14321838B3B00A79E12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAE14221838B3B00A79E12 /* GoogleService-Info.plist */; };
+		4DF0EF64218D500B0029DD86 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0EF61218D500B0029DD86 /* Collection.swift */; };
+		4DF0EF65218D500B0029DD86 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0EF62218D500B0029DD86 /* Collections.swift */; };
+		4DF0EF66218D500B0029DD86 /* DessertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0EF63218D500B0029DD86 /* DessertMapper.swift */; };
+		4DF0EF69218D695F0029DD86 /* DessertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0EF68218D695F0029DD86 /* DessertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,13 +78,13 @@
 		4D624DC021856FA400804E6A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4D624DC22185703600804E6A /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		4D624DC42185707000804E6A /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
-		4D624DC62185731400804E6A /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
-		4DBD74B0218A21100094DF81 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collection.swift; path = ../../../codegen_5bd9a875abdca/Collection.swift; sourceTree = "<group>"; };
-		4DBD74B1218A21100094DF81 /* Collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collections.swift; path = ../../../codegen_5bd9a875abdca/Collections.swift; sourceTree = "<group>"; };
-		4DBD74B2218A21100094DF81 /* DessertMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DessertMapper.swift; path = ../../../codegen_5bd9a875abdca/DessertMapper.swift; sourceTree = "<group>"; };
+		4D624DC62185731400804E6A /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		4D78886E218D8C9800CD8696 /* DessertListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewModel.swift; sourceTree = "<group>"; };
+		4D788871218D8FA300CD8696 /* DessertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertViewModel.swift; sourceTree = "<group>"; };
+		4D788874218D982800CD8696 /* DessertDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDataSource.swift; sourceTree = "<group>"; };
+		4D788876218D984000CD8696 /* DessertDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDelegate.swift; sourceTree = "<group>"; };
 		4DBE35C12185A253002EA4A1 /* AlamofireRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRouterProtocol.swift; sourceTree = "<group>"; };
 		4DBE35C52185C91F002EA4A1 /* DessertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCell.swift; sourceTree = "<group>"; };
-		4DBE35C72185F2A3002EA4A1 /* DessertCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCellModel.swift; sourceTree = "<group>"; };
 		4DBE35C92185F5F2002EA4A1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4DBE35CB2185F83D002EA4A1 /* DessertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertViewController.swift; sourceTree = "<group>"; };
 		4DBE35D32186114D002EA4A1 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
@@ -98,6 +102,10 @@
 		4DDAE1342183891600A79E12 /* DessertProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertProjectUITests.swift; sourceTree = "<group>"; };
 		4DDAE1362183891600A79E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDAE14221838B3B00A79E12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Applogo/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4DF0EF61218D500B0029DD86 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		4DF0EF62218D500B0029DD86 /* Collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
+		4DF0EF63218D500B0029DD86 /* DessertMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertMapper.swift; sourceTree = "<group>"; };
+		4DF0EF68218D695F0029DD86 /* DessertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertService.swift; sourceTree = "<group>"; };
 		64626FA0754B20F94226AE8D /* Pods_DessertProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DessertProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9569356225A032144BACCB32 /* Pods-DessertProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DessertProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DessertProject/Pods-DessertProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F28589505D65250ACFBCE906 /* Pods-DessertProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DessertProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DessertProjectTests/Pods-DessertProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,9 +157,29 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		4D788870218D8F7700CD8696 /* DessertMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4D78886E218D8C9800CD8696 /* DessertListViewModel.swift */,
+				4D788871218D8FA300CD8696 /* DessertViewModel.swift */,
+			);
+			path = DessertMenu;
+			sourceTree = "<group>";
+		};
+		4D788873218D97FE00CD8696 /* Dessert */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE35CB2185F83D002EA4A1 /* DessertViewController.swift */,
+				4D788874218D982800CD8696 /* DessertDataSource.swift */,
+				4D788876218D984000CD8696 /* DessertDelegate.swift */,
+			);
+			path = Dessert;
+			sourceTree = "<group>";
+		};
 		4DBE35C32185C688002EA4A1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				4DBE35D32186114D002EA4A1 /* TestCell.swift */,
 				4DBE35C52185C91F002EA4A1 /* DessertCell.swift */,
 			);
 			path = Cell;
@@ -160,9 +188,8 @@
 		4DBE35C42185C873002EA4A1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4D788873218D97FE00CD8696 /* Dessert */,
 				4DDAE1162183891500A79E12 /* ViewController.swift */,
-				4DBE35CB2185F83D002EA4A1 /* DessertViewController.swift */,
-				4DBE35D32186114D002EA4A1 /* TestCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,7 +253,7 @@
 		4DDAE144218392D300A79E12 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4DBE35C72185F2A3002EA4A1 /* DessertCellModel.swift */,
+				4D788870218D8F7700CD8696 /* DessertMenu */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -234,11 +261,9 @@
 		4DDAE145218392EE00A79E12 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4DBD74B0218A21100094DF81 /* Collection.swift */,
-				4DBD74B1218A21100094DF81 /* Collections.swift */,
-				4DBD74B2218A21100094DF81 /* DessertMapper.swift */,
-				4D624DB92184CF4B00804E6A /* UserInfo.swift */,
-				4D624DC62185731400804E6A /* Dessert.swift */,
+				4DF0EF6A218D6A3F0029DD86 /* Collections */,
+				4D624DC62185731400804E6A /* Result.swift */,
+				4DF0EF68218D695F0029DD86 /* DessertService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,6 +294,17 @@
 				4DBE35C92185F5F2002EA4A1 /* NetworkError.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		4DF0EF6A218D6A3F0029DD86 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				4D624DB92184CF4B00804E6A /* UserInfo.swift */,
+				4DF0EF61218D500B0029DD86 /* Collection.swift */,
+				4DF0EF62218D500B0029DD86 /* Collections.swift */,
+				4DF0EF63218D500B0029DD86 /* DessertMapper.swift */,
+			);
+			path = Collections;
 			sourceTree = "<group>";
 		};
 		B4DC578700389BEBE351D6BD /* Pods */ = {
@@ -475,6 +511,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Himotoki/Himotoki.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -484,6 +521,7 @@
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -496,6 +534,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Himotoki.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -505,6 +544,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,27 +584,31 @@
 				4D624DB02184CA4700804E6A /* AlamofireMethod.swift in Sources */,
 				4D624DB82184CED400804E6A /* Header.swift in Sources */,
 				4D624DB22184CBC100804E6A /* UrlRequest.swift in Sources */,
-				4DBD74B4218A21100094DF81 /* Collections.swift in Sources */,
+				4DF0EF69218D695F0029DD86 /* DessertService.swift in Sources */,
 				4D624DB42184CCDE00804E6A /* BaseURL.swift in Sources */,
 				4DBE35C62185C91F002EA4A1 /* DessertCell.swift in Sources */,
 				4D624DAC2184C92200804E6A /* PathUrl.swift in Sources */,
-				4DBE35C82185F2A3002EA4A1 /* DessertCellModel.swift in Sources */,
-				4DBD74B5218A21100094DF81 /* DessertMapper.swift in Sources */,
+				4DF0EF65218D500B0029DD86 /* Collections.swift in Sources */,
+				4DF0EF64218D500B0029DD86 /* Collection.swift in Sources */,
 				4DBE35D42186114D002EA4A1 /* TestCell.swift in Sources */,
 				4D624DB62184CE9800804E6A /* RawData.swift in Sources */,
+				4D788872218D8FA300CD8696 /* DessertViewModel.swift in Sources */,
 				4DDAE1172183891500A79E12 /* ViewController.swift in Sources */,
+				4D788875218D982800CD8696 /* DessertDataSource.swift in Sources */,
 				4D624DC121856FA400804E6A /* Constants.swift in Sources */,
+				4DF0EF66218D500B0029DD86 /* DessertMapper.swift in Sources */,
 				4DDAE1152183891500A79E12 /* AppDelegate.swift in Sources */,
 				4D624DBA2184CF4B00804E6A /* UserInfo.swift in Sources */,
-				4D624DC72185731400804E6A /* Dessert.swift in Sources */,
+				4D624DC72185731400804E6A /* Result.swift in Sources */,
 				4D624DBC2184D44F00804E6A /* Parameter.swift in Sources */,
 				4D624DAA2184BF3D00804E6A /* Network.swift in Sources */,
+				4D788877218D984000CD8696 /* DessertDelegate.swift in Sources */,
 				4DBE35CC2185F83D002EA4A1 /* DessertViewController.swift in Sources */,
 				4DBE35C22185A253002EA4A1 /* AlamofireRouterProtocol.swift in Sources */,
-				4DBD74B3218A21100094DF81 /* Collection.swift in Sources */,
 				4D624DC32185703600804E6A /* ApiRouter.swift in Sources */,
 				4D624DC52185707000804E6A /* ApiClient.swift in Sources */,
 				4DBE35CA2185F5F2002EA4A1 /* NetworkError.swift in Sources */,
+				4D78886F218D8C9800CD8696 /* DessertListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

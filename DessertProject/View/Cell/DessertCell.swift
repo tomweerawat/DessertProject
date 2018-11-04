@@ -7,41 +7,54 @@
 //
 
 import UIKit
-import Spring
 import RxSwift
-import RxCocoa
+import SDWebImage
 
 
 class DessertCell: UITableViewCell{
     
+    @IBOutlet weak var thumbImage: UIImageView!
+    @IBOutlet weak var locationName: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    public static let reuseIdentifier = "DessertCell"
     
-    @IBOutlet weak var dessertimg: UIImageView!
+    public var dessertViewModel: DessertViewModel!
+    private let disposeBag = DisposeBag()
     
-    private var disposeBag: DisposeBag? = DisposeBag()
-    
-    var viewModel: DessertCellModeling? {
-        didSet {
-            let disposeBag = DisposeBag()
-            
-            guard let viewModel = viewModel else { return }
-            
-            viewModel.image
-                .bind(to: dessertimg.rx.image)
-                .disposed(by: disposeBag)
-            
-    
-            
-            self.disposeBag = disposeBag
-        }
-    }
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        
-        viewModel = nil
-        disposeBag = nil
-    }
     override func awakeFromNib() {
-       super.awakeFromNib()
+        super.awakeFromNib()
+        // 1
+        let layoutGuide = UILayoutGuide()
+        contentView.addLayoutGuide(layoutGuide)
+        
+        // 2
+        let topConstraint = layoutGuide.topAnchor
+            .constraint(equalTo: nameLabel.topAnchor)
+        
+        // 3
+        let bottomConstraint = layoutGuide.bottomAnchor
+            .constraint(equalTo: locationName.bottomAnchor)
+        
+        // 4
+        let centeringConstraint = layoutGuide.centerYAnchor
+            .constraint(equalTo: contentView.centerYAnchor)
+        
+        // 5
+        NSLayoutConstraint.activate(
+            [topConstraint, bottomConstraint, centeringConstraint])
+        
+    }
+    
+    public func bind(dessertlist: DessertViewModel) {
+        dessertViewModel = dessertlist
+        
+        dessertViewModel.dessertViewmodel.asObservable()
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { (list) in
+                self.thumbImage.sd_setImage(with: URL(string: list?.collection?.image_url ?? ""), completed: nil)
+                self.nameLabel.text = list?.collection?.title
+                self.locationName.text = list?.collection?.description
+            }).disposed(by: disposeBag)
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

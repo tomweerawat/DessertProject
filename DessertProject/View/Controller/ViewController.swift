@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import RxAlamofire
+import ObjectMapper
+import RxSwift
 import Alamofire
 
 
