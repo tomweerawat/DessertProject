@@ -9,19 +9,23 @@
 import Foundation
 import ObjectMapper
 
-class Result<T: BaseMappable>: Mappable{
+class Result<T: Mappable>: Mappable{
     
-    var checksum: String?
-    var data: [T]?
-    var total: Int?
+    var data : [T]?
+    var has_more : Int?
+    var share_url : String?
+    var display_text : String?
+    var has_total : Int?
     
     init() {}
     required convenience init?(map: Map) { self.init() }
     
     func mapping(map: Map) {
-        checksum    <- map["checksum"]
-        data        <- map["data"]
-        total       <- map["total"]
+        data        <- map["collections"]
+        has_more    <- map["has_more"]
+        share_url   <- map["share_url"]
+        display_text <- map["display_text"]
+        has_total <- map["has_total"]
     }
     
 }

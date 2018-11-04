@@ -27,6 +27,8 @@ class DessertViewController:UIViewController {
         
         dessertListViewModel = DessertListViewModel(service: DessertService())
         bind(viewModel: dessertListViewModel)
+        dessertListViewModel.city_id.onNext("1")
+        
     }
     
     private func bind(viewModel: DessertListViewModel?) {

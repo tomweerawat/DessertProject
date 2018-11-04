@@ -17,15 +17,28 @@ import AlamofireObjectMapper
 class DessertService: NSObject {
     
     private let disposeBag = DisposeBag()
-    private let router = AlamofireRouter.loadPhoto
     public var dataResp:[Collections]?
     
     public func getDessert(for city_id: String) -> Observable<Result<Collections>?>{
-        return RxAlamofire.request(router)
-            .map {(json)in Mapper<Result<Collections>>().map(JSONObject: json) }
+        let router = AlamofireRouter.loadDessert(city_id: city_id)
+        return RxAlamofire.requestJSON(router)
+            .map {(r,json)in Mapper<Result<Collections>>().map(JSONObject: json) }
     }
 
-   
+//    public func getDessert(for city_id: String) ->() {
+//        let router = AlamofireRouter.loadDessert(city_id: "1")
+//        RxAlamofire.requestJSON(router).subscribe(onNext: {(r, value) in
+//            let json = JSON(value)
+//            let collections = json["collections"]
+//            if let respData = collections.arrayObject {
+//                self.dataResp = Mapper<Collections>().mapArray(JSONObject: respData)
+//                print(self.dataResp?.count as Any)
+//            }
+//            }, onError: { error in
+//                print(error)
+//        }).disposed(by: disposeBag)
+//
+//    }
 
 
     

@@ -38,7 +38,7 @@ class DessertListViewModel{
         return dessert.getDessert(for: city_id)
             .do(onNext: { (result) in
                 if let data = result?.data {
-                    self.dessert.getDessert(for: city_id)
+                    self.dessertList.value = data
                 }
             }, onError: { (error) in
                 self.errorMessage.value = NSLocalizedString("errorMessage", comment: "")

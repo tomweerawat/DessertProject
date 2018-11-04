@@ -286,6 +286,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="R1B-VT-jpE" id="H2S-mW-3pZ"/>
+                                    <outlet property="delegate" destination="R1B-VT-jpE" id="dNX-rh-Gm7"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
