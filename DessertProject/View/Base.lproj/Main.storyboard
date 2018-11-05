@@ -121,27 +121,44 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jMv-2H-tTA"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Dekiver" id="f2Y-W7-gL3"/>
+                    <navigationItem key="navigationItem" title="Deliver" id="f2Y-W7-gL3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4y-8Y-XWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2074" y="68"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="ESs-7G-LLj">
             <objects>
-                <viewController id="cpu-zs-Ir5" sceneMemberID="viewController">
+                <viewController id="cpu-zs-Ir5" customClass="ProfileViewController" customModule="DessertProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sGr-lZ-oER">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVB-DS-1f9">
+                                <rect key="frame" x="50" y="344" width="314" height="169"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YVB-DS-1f9" firstAttribute="top" secondItem="fCy-PX-glv" secondAttribute="top" constant="300" id="6jJ-Ud-nmy"/>
+                            <constraint firstItem="YVB-DS-1f9" firstAttribute="centerY" secondItem="sGr-lZ-oER" secondAttribute="centerY" id="AhQ-fv-UTQ"/>
+                            <constraint firstItem="fCy-PX-glv" firstAttribute="bottom" secondItem="YVB-DS-1f9" secondAttribute="bottom" constant="300" id="MZS-vM-6FZ"/>
+                            <constraint firstItem="YVB-DS-1f9" firstAttribute="leading" secondItem="fCy-PX-glv" secondAttribute="leading" constant="50" id="gMP-aY-A1e"/>
+                            <constraint firstItem="YVB-DS-1f9" firstAttribute="centerX" secondItem="sGr-lZ-oER" secondAttribute="centerX" id="i9r-tM-8xg"/>
+                            <constraint firstItem="fCy-PX-glv" firstAttribute="trailing" secondItem="YVB-DS-1f9" secondAttribute="trailing" constant="50" id="yvz-fW-AaD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fCy-PX-glv"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icons8-user-50" id="9v4-6I-9Ep"/>
+                    <connections>
+                        <outlet property="container" destination="YVB-DS-1f9" id="ttI-x5-mjW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xc-7G-2K4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239" y="780"/>
+            <point key="canvasLocation" x="1237.68115942029" y="779.46428571428567"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="N4U-Nz-zHM">
@@ -241,7 +258,7 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-1024" translatesAutoresizingMaskIntoConstraints="NO" id="nQC-EI-fXA">
                                                     <rect key="frame" x="10" y="10" width="80" height="65.5"/>
-                                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="4Xh-OO-ch9"/>
                                                     </constraints>
@@ -270,6 +287,7 @@
                                             <constraints>
                                                 <constraint firstItem="nQC-EI-fXA" firstAttribute="top" secondItem="OGC-dB-QYu" secondAttribute="top" constant="10" id="9n8-qU-Am2"/>
                                                 <constraint firstItem="nQC-EI-fXA" firstAttribute="leading" secondItem="OGC-dB-QYu" secondAttribute="leading" constant="10" id="Mh6-yA-94y"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UVy-ul-gJN" secondAttribute="trailing" constant="126" id="R03-2y-95G"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="VJ1-aQ-3hb" secondAttribute="trailing" id="ZwL-uy-FKD"/>
                                                 <constraint firstItem="VJ1-aQ-3hb" firstAttribute="top" secondItem="OGC-dB-QYu" secondAttribute="topMargin" constant="15" placeholder="YES" id="cxc-mN-0fJ"/>
                                                 <constraint firstAttribute="bottom" secondItem="nQC-EI-fXA" secondAttribute="bottom" constant="10" id="gxR-zH-UbM"/>
@@ -306,20 +324,49 @@
             </objects>
             <point key="canvasLocation" x="2075" y="-603"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="634-ve-dzU">
             <objects>
-                <viewController id="pHR-OK-T4m" sceneMemberID="viewController">
+                <viewController id="pHR-OK-T4m" customClass="DetailViewController" customModule="DessertProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eF5-B4-di6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4x-rL-ylu">
+                                <rect key="frame" x="8" y="99" width="414" height="196"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-1024" translatesAutoresizingMaskIntoConstraints="NO" id="mDx-Bw-TIi">
+                                        <rect key="frame" x="0.0" y="-9" width="406" height="213"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="213" id="gZR-T7-5vz"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mDx-Bw-TIi" firstAttribute="trailing" secondItem="J4x-rL-ylu" secondAttribute="trailingMargin" id="PGi-Go-zbo"/>
+                                    <constraint firstItem="mDx-Bw-TIi" firstAttribute="top" secondItem="J4x-rL-ylu" secondAttribute="top" constant="-9" id="Qvq-Do-JaY"/>
+                                    <constraint firstItem="mDx-Bw-TIi" firstAttribute="centerY" secondItem="J4x-rL-ylu" secondAttribute="centerY" id="Yyq-cy-TgB"/>
+                                    <constraint firstItem="mDx-Bw-TIi" firstAttribute="leading" secondItem="J4x-rL-ylu" secondAttribute="leading" id="oF3-QR-XjB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ReS-pQ-cxc" firstAttribute="bottom" secondItem="J4x-rL-ylu" secondAttribute="bottom" constant="518" id="KJi-3g-W3f"/>
+                            <constraint firstItem="J4x-rL-ylu" firstAttribute="leading" secondItem="ReS-pQ-cxc" secondAttribute="leading" constant="8" id="V1H-wa-qT2"/>
+                            <constraint firstItem="J4x-rL-ylu" firstAttribute="top" secondItem="ReS-pQ-cxc" secondAttribute="top" constant="11" id="ZhH-5W-fuj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J4x-rL-ylu" secondAttribute="trailing" constant="-28" id="wlv-d4-Svu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ReS-pQ-cxc"/>
                     </view>
+                    <connections>
+                        <outlet property="detailImage" destination="mDx-Bw-TIi" id="D9f-h9-6cy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqo-gl-q3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2892" y="-594"/>
+            <point key="canvasLocation" x="2889.8550724637685" y="-594.64285714285711"/>
         </scene>
     </scenes>
     <resources>

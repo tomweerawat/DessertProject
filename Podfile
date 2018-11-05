@@ -37,6 +37,7 @@ target 'DessertProject' do
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
   pod 'SDWebImage'
   pod 'lottie-ios'
+  pod 'SVProgressHUD'
   
   target 'DessertProjectTests' do
     inherit! :search_paths

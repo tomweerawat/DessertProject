@@ -27,14 +27,14 @@ class DessertListViewModel{
         dessert = service
         
         city_id.subscribe(onNext: { (id) in
-            self.loadPlaylists(city_id: id)
+            self.loadDessertlists(city_id: id)
                 .subscribe()
                 .disposed(by: self.disposeBag)
         }).disposed(by: disposeBag)
     }
     
     
-    public func loadPlaylists(city_id: String) -> Observable<Result<Collections>?> {
+    public func loadDessertlists(city_id: String) -> Observable<Result<Collections>?> {
         return dessert.getDessert(for: city_id)
             .do(onNext: { (result) in
                 if let data = result?.data {
